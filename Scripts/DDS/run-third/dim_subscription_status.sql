@@ -1,6 +1,7 @@
 use DDS
 go
 
+
 -- Drop FK if exists:
 
 if exists
@@ -10,6 +11,7 @@ if exists
 alter table fact_communication_subscription
   drop constraint fk_fact_communication_subscription_dim_subscription_status
 go
+
 
 -- Drop and create table:
 
@@ -31,6 +33,7 @@ create table dim_subscription_status
   on dds_fg6
 ) on dds_fg6
 go
+
 
 -- Create FK:
 
