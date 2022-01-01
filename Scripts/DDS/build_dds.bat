@@ -1,22 +1,22 @@
-d:
-cd "d:\data\acer\book\scripts\dds"
-sqlcmd -i db_dds.sql                                >> ddsout.txt
-sqlcmd -i dim_campaign.sql                          >> ddsout.txt
-sqlcmd -i dim_channel.sql                           >> ddsout.txt
-sqlcmd -i dim_communication.sql                     >> ddsout.txt
-sqlcmd -i dim_customer.sql                          >> ddsout.txt
-sqlcmd -i dim_date.sql                              >> ddsout.txt
-sqlcmd -i dim_delivery_status.sql                   >> ddsout.txt
-sqlcmd -i dim_format.sql                            >> ddsout.txt
-sqlcmd -i dim_lead.sql                              >> ddsout.txt
-sqlcmd -i dim_package.sql                           >> ddsout.txt
-sqlcmd -i dim_product.sql                           >> ddsout.txt
-sqlcmd -i dim_store.sql                             >> ddsout.txt
-sqlcmd -i dim_subscription_status.sql               >> ddsout.txt
-sqlcmd -i dim_supplier.sql                          >> ddsout.txt
-sqlcmd -i dim_week.sql                              >> ddsout.txt
-sqlcmd -i fact_product_sales.sql                    >> ddsout.txt
-sqlcmd -i fact_subscription_sales.sql               >> ddsout.txt
-sqlcmd -i fact_supplier_performance.sql             >> ddsout.txt
-sqlcmd -i fact_communication_subscription.sql       >> ddsout.txt
-sqlcmd -i fact_campaign_result.sql                  >> ddsout.txt
+db_dds.sql   
+function_fiscal_period.sql 
+function_fiscal_week.sql                      
+dim_campaign.sql                   
+dim_channel.sql                    
+dim_communication.sql              
+dim_customer.sql                   
+dim_date.sql                       
+dim_delivery_status.sql            
+dim_format.sql                     
+dim_lead.sql                       
+dim_package.sql                    
+dim_product.sql                    
+dim_store.sql                      
+dim_subscription_status.sql        
+dim_supplier.sql                   
+dim_week.sql                       
+fact_product_sales.sql             
+fact_subscription_sales_with_partition.sql
+fact_supplier_performance.sql      
+fact_communication_subscription.sql
+fact_campaign_result.sql           
