@@ -1,15 +1,3 @@
-# Apress Source Code
+# Datawarehousing with SQL Server
 
-This repository accompanies [*Building a Data Warehouse*](http://www.apress.com/9781590599310) by Vincent Rainardi (Apress, 2008).
-
-![Cover image](9781590599310.jpg)
-
-Download the files as a zip using the green button, or clone the repository to your machine using Git.
-
-## Releases
-
-Release v1.0 corresponds to the code in the published book, without corrections or updates.
-
-## Contributions
-
-See the file Contributing.md for more information on how you can contribute to this repository.
+In this repo, I teach myself the essentials of datawarehousing using a book titled  Building a Data Warehouse by Vincent Rainardi. SQL server is implemented with docker.
