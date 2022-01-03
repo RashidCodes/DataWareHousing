@@ -84,6 +84,12 @@ drop table customer
 go
 
 -- Create customer table:
+/* As you can see, this table has it's own data warehouse key called customer_key. The DDS will be using this key too. We do key management in the NDS. The
+NDS is where the key is assigned and maintained. If you notice, there is no address_key, email_address_key, or phone_number_key in the customer table.
+
+This is because we are using junction tables to implement a many-to-many relationship for these three entities.
+*/
+
 
 create table customer
 ( customer_key           int not null identity(1,1)

@@ -21,6 +21,7 @@ go
 
 -- Create the table:
 
+/* The order_header table references customer and store tables and is being referenced by the order_detail table. */
 create table order_header
 ( order_key             int not null identity(1,1)
 , order_id              int not null
@@ -54,7 +55,13 @@ alter table order_item
   references order_header(order_key)
 go
 
--- Build indexes:
+/*
+Build indexes
+------------------
+We created four indexes because the query traffic could come
+from those directions.
+*/
+
 
 if exists
   (select * from sys.indexes
