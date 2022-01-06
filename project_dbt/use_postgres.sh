@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Activate the python virtual env 
-source ../../Environments/python3Env/bin/activate
+source ../../../Environments/python3Env/bin/activate
 
 # Login into postgres if all works out 
 if [[ $? -eq 0 ]]
