@@ -2,11 +2,12 @@
 
 In this repo, I teach myself the essentials of datawarehousing using a book titled  Building a Data Warehouse by Vincent Rainardi. SQL server is implemented with docker. I'll be highlighting the major I've learned soon.
 
+<br/>
+
 # Biggest difficulty
 The book is using SSIS and SQL Server for the project. I've had to implement everything in the book using tools like ```bash```, ```docker```, ```dbt```, and ```airbyte```. Very soon I'll be adding ```airflow``` to orchestrate the tasks because there's so many of them - data matching, database restoration, data population, etc.
 
 <br/>
-
 
 # What's all this for?
 
@@ -44,7 +45,7 @@ The business has three systems with multiple data stores. All datastores are loa
 
 The Stage database is populated using Airbyte. Basically, all source data is loaded into Stage database. The data is not normalized for to reduce redundancy, however the data is prepared for the population of the NDS. Normalization is performed in the NDS. I won't be keeping days-worth of data in the staging database. I'll truncate all relations in the Stage database prior to data extraction and loading from the source systems. All I have to do is set the right Sync mode in Airbyte.
 
-
+<br/>
 
 
 ## NDS Population
@@ -66,11 +67,11 @@ The country relation has already been defined in the NDS. Thus, I have to prepar
 
 These are the headers of the country relation that was uploaded from a CSV file.
 
-<img src="original"/>
+<img src="original.png"/>
 
 But these are the headers that my business people want.
 
-<img src="modified" />
+<img src="modified.png" />
 
 <br/>
 
